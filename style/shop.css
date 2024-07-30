@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    height: auto;
+    width: 100vw;
+}
+
+#display{
+    width: 100vw;
+    height: 100vh;
+    display: inherit;
+}
+.ptitle{
+    
+}
