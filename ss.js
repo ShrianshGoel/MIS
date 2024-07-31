@@ -1,4 +1,4 @@
-const url1=['./style/w1.jpg','./style/w2.jpg','./style/w3.jpg','./style/w.jpg'];
+/*const url1=['./style/w1.jpg','./style/w2.jpg','./style/w3.jpg','./style/w.jpg'];
 const thumb=document.querySelector(".th");
 document.querySelector(".th").addEventListener("click",function(){
  const k=getComputedStyle(thumb);
@@ -82,4 +82,33 @@ back=back.substring(back.lastIndexOf('/')+1);
            kk.style.backgroundSize="cover";
           });
 
-    },6000);
+    },6000);*/
+    var selno=0;
+    document.querySelectorAll(".size").forEach((el)=>{
+el.addEventListener("click",function(e){
+el.style.background="black";
+el.style.color="white";
+el.style.border="2px solid orange";
+selno=el.dataset.type;
+document.querySelectorAll(".size").forEach((elx)=>{
+  if(selno!=elx.dataset.type)
+    {
+      elx.style.background="white";
+elx.style.color="black";
+elx.style.border="2px solid black";
+    }
+});
+});
+
+    });
+    var checked=0;
+    document.querySelector(".order").addEventListener("click",function(){
+      if(checked===0){
+      document.querySelector(".order").innerHTML="Added To Cart";
+      checked=1;
+      }
+      else{
+checked=0;
+document.querySelector(".order").innerHTML="Add To Cart";
+      }
+    });
