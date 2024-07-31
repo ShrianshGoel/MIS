@@ -11,16 +11,172 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: black;
+    background: rgb(219, 219, 219);
     height: auto;
+    flex-direction: column;
     width: 100vw;
 }
 
 #display{
     width: 100vw;
     height: 100vh;
-    display: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.ptitle{
-    
+.prod1{
+    width: 45%;
+ aspect-ratio: 16/9;
+    background: url(./JORDAN+TATUM+2+PF-Photoroom.png);
+    background-size: cover;
+    position: absolute;
+    top:18%;
+    right: 27%;
+    background-position: center;
+}
+.pd{
+    position: absolute;
+    top:6%;
+    right:35%;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Permanent Marker',sans-serif;
+}
+.drc{
+    width: 30%;
+    height: 94%;
+    background: rgba(255,255,255,0.05);
+    position: absolute;
+    left: 1%;
+    border-radius: 12px;
+}
+.prodp{
+    width: 24%;
+    height: 54%;
+
+    position: absolute;
+    top:15%;
+    right:2%;
+    background: rgba(255, 255, 255, 0.074);
+
+}
+.prodp p{
+font-size: 1.5rem;
+margin: 9% 0% 0% 9%;
+
+text-transform: capitalize;
+font-family: "Poppins",sans-serif;
+font-weight: bold;
+}
+.size{
+    font-weight: bold;
+    font-family:sans-serif;
+    width: 7vh;
+    text-align: center;
+    line-height: 7vh;
+    display: inline-block;
+    margin-right: 5%;
+    margin-top:10%;
+    height: 7vh;
+    background: rgba(255, 255, 255, 0.26);
+    border:2px solid black;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 150ms;
+}
+.size:hover{
+    transform: scale(1.02);
+}
+.size:first-of-type{
+    margin-left: 9%;
+}
+.order{
+    width: 90%;
+    height: 15%;
+    border-radius: 9px;
+    background:#6a6acb;
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 8vh;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    transition: all 800ms;
+}
+.order:hover{
+    background: black;
+}
+.drc{
+    width: 25%;
+    height: 75%;
+    position: absolute;
+    left: 3%;
+    background:rgba(255, 255, 255, 0.074);
+}
+.drc p{
+font-family: 'Rubik',sans-serif;
+font-size: 2rem;
+font-weight: bold;
+margin: 40px 0px 0px 50px;
+}
+.drc p:nth-of-type(2){
+    font-size: 1rem;
+    color:#6a6acb;
+    letter-spacing: 1.3px;
+}
+#icon{
+    position: fixed;
+    top:5%;
+    right:5%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+    color:white;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    background:crimson;
+    justify-content: center;
+}
+#shop{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+#search{
+    width: 60%;
+    height: 8%;
+    border-radius: 12px;
+    border:2px solid black;
+    padding: 12px;
+    overflow: hidden;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 59px;
+    letter-spacing: 1.2px;
+    position: absolute;
+    top:5%;
+    font-family: 'Rubik',sans-serif;
+}
+#search::placeholder{
+    color:black;
+}
+#k{
+    position: absolute;
+    color:black;
+ font-size: 1.4rem;
+    font-weight: bold;
+    top:7%;
+    left:21.2%;
 }
