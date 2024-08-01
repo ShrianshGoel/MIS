@@ -139,11 +139,16 @@ margin: 40px 0px 0px 50px;
     height: 7vh;
     display: flex;
     color:white;
+    z-index:9;
+    transition: all 500ms;
     align-items: center;
     border-radius: 100%;
     cursor: pointer;
     background:crimson;
     justify-content: center;
+}
+#icon:hover{
+    background: black;
 }
 #shop{
     width: 100vw;
@@ -179,4 +184,79 @@ margin: 40px 0px 0px 50px;
     font-weight: bold;
     top:7%;
     left:21.2%;
+}
+.prodcont{
+    width: 90%;
+    height: 90%;
+position: absolute;
+top: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards{
+    width: 20%;
+    height: 60%;
+    background: rgba(255, 255, 255, 0.242);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    color: black;
+    font-family: 'Rubik',sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 72vh;
+    position: relative;
+}
+.cards::before{
+    content: '';
+    border-radius: 100%;
+    width: 18vh;
+    height: 18vh;
+    background: var(--color);
+    position: absolute;
+    top:-5%;
+       transition: all 0.6s;
+    right: -5%;
+}
+.cards::after{
+    content: '';
+    position: absolute;
+    transition: all 0.6s;
+    top:15%;
+    left: 7%;
+    width: 90%;
+    height: 70%;
+    background: var(--url);
+    background-size: cover;
+}
+.cards:hover::after{
+    transform: rotate(-15deg) translateY(-30%);
+}
+.cards:hover::before{
+    transform: scale(1.1);
+    position: absolute;
+   top:23%;
+   right: 23%;
+}
+.pur{
+    position: absolute;
+    bottom: 8%;
+    width: 60%;
+    height: 13%;
+    border-radius: 41px;
+    right: 19%;
+    text-align: center;
+    border: 2px solid black;
+    background: white;
+    color:black;
+    font-size: 1rem;
+    line-height: 6vh;
+    font-family: 'Rubik',sans-serif;
+}
+.pur:hover{
+    color:white;
+    background: black;
 }
